@@ -7,8 +7,8 @@ set $mod Mod4
 font pango:Meslo LG M for Powerline RegularForPowerline 9
 
 gaps inner 5
-#gaps outer 1
-smart_gaps on
+gaps outer 3
+#smart_gaps on
 smart_borders no_gaps
 
 
@@ -44,8 +44,8 @@ client.urgent     		$baseB0 $orange $baseB3 $red
 #client.urgent 	 		$baseB0 $yellow $baseB3 $orange
 
 # $i3-background
-exec_always --no-startup-id xsetroot -solid '$baseA2'
-
+# exec_always --no-startup-id xsetroot -solid '$baseA2'
+exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpaper.jpg
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
@@ -200,6 +200,7 @@ bindsym $mod+Shift+Delete exit
 # On Startup
 exec --no-startup-id /usr/bin/unity-settings-daemon
 exec --no-startup-id /usr/bin/gnome-session
+exec_always --no-startup-id /usr/bin/compton
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec amixer -q -D pulse sset Master 5%+ && pkill -RTMIN+1 i3blocks 
