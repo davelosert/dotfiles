@@ -1,0 +1,15 @@
+#!/bin/bash
+
+laptop="eDP1"
+monitor="DP1"
+
+i3-msg 'workspace number 1'
+$(i3-msg move workspace to output ${monitor})
+
+i3-msg 'workspace number 2'
+$(i3-msg move workspace to output ${monitor})
+
+i3-msg 'workspace number 3'
+$(i3-msg move workspace to output ${laptop})
+
+
