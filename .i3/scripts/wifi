@@ -36,4 +36,4 @@ echo -n "$ssid ($ipaddr)"
 
 # short text
 echo "$ssid ($ipaddr)"
-echo "#859900"
+echo "#2aa198"
