@@ -34,7 +34,6 @@ try:
 	
 	exit
 except dbus.exceptions.DBusException,e:
-	print(e)
 	exit
 
 
