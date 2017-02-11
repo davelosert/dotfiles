@@ -1,5 +1,3 @@
-alias themis="cd /opt/intrexx/org/themis"
-alias intrexx="cd /opt/intrexx/"
 alias thd="cd /home/davidlosert/Projects/VDMA/vdma-themis/"
 alias vdma="cd /home/davidlosert/Projects/VDMA"
 alias tng="cd /home/davidlosert/Projects/VDMA/vdma-themis-ng-client"
@@ -29,3 +27,8 @@ alias dp:home="xrandr --output eDP1 --left-of DP1 && xrandr --output DP1 --mode 
 #alias dp:home:size="xrandr --output DP1 --mode 2560x1440"
 
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias au='sudo apt-get update -y'
+alias aug='sudo apt-get upgrade -y'
+alias tngs='cd ~/Projects/VDMA/vdma-themis-ng-server/'
+alias ic='cd Projects/VDMA/intrexx/portalManager/client/bin/linux'
+alias o='xdg-open'
