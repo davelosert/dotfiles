@@ -11,11 +11,19 @@ set history=100
 set number
 set relativenumber
 set laststatus=2
+set ignorecase
+set smartcase
 
-" Start NERDtree
-autocmd vimenter * NERDTree
-" Focus opened File after opening NERDTree
-autocmd VimEnter * wincmd p
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+set expandtab 
+set tabstop=2 
+set shiftwidth=2 
+set softtabstop=2
 
 let g:airline_powerline_fonts = 1
+
+inoremap jk <ESC>
+let mapleader = "\<Space>"
+
+au BufNewFile,BufRead *.groovy  setf groovy 
+au BufNewFile,BufRead Jenkinsfile  setf Jenkinsfile 
+
