@@ -19,6 +19,6 @@ export FZF_DEFAULT_OPTS='--height 60% --color dark,hl:33,hl+:37,fg+:235,bg+:136,
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_CTRL_T_OPTS="--preview '(highlight -O ansi -l {} 2> /dev/null || cat {} || tree -C {}) 2> /dev/null | head -200'"
 
-export FZF_ALT_C_COMMAND='fd --type d --exclude node_modules'
+export FZF_ALT_C_COMMAND='fd --type d'
 export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -200'"
 
