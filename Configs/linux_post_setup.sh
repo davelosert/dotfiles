@@ -25,7 +25,7 @@ sudo apt-get -y --force-yes update
 sudo apt-get -y --force-yes upgrade
 
 ## Install all apt-packages
-sudo apt-get install -y zsh git vim google-chrome-stable language-pack-de i3 python-pip gnome-keyring fonts-font-awesome
+sudo apt-get install -y zsh git vim google-chrome-stable language-pack-de i3 python-pip gnome-keyring fonts-font-awesome tree
 
 ## Upgrade PIP
 pip install --upgrade pip

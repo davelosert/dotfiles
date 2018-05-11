@@ -91,3 +91,5 @@ source ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 stty -ixon
 
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
