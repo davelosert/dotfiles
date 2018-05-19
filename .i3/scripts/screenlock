@@ -1,0 +1,4 @@
+#!/bin/sh
+~/.i3/i3lock-fancy-multimonitor/lock -b=0x6
+
+
